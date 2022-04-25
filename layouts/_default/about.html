@@ -15,7 +15,15 @@
       <div class="col-md-6">
         {{ with .title }}<h2 class="mt-40">{{ . | markdownify }}</h2>{{ end }}
         {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
-        {{ with .button }}
+        {{ with .button1 }}
+        {{ if .enable }}
+        <a href="{{ .link | relURL }}" class="btn btn-small mt-20">{{ .label }}</a>
+        {{ end }}
+        {{ end }}
+      </div>
+
+      <div class="col-md-6">
+       {{ with .button2 }}
         {{ if .enable }}
         <a href="{{ .link | relURL }}" class="btn btn-small mt-20">{{ .label }}</a>
         {{ end }}
@@ -91,7 +99,7 @@
       {{ end }}
       {{ end }}
 
-      {{ with .Params.mission_vision }}
+      <!-- {{ with .Params.mission_vision }}
       {{ if .enable }}
       <div class="col-md-6">
         <div class="tabCommon">
@@ -111,7 +119,7 @@
         </div>
       </div>
       {{ end }}
-      {{ end }}
+      {{ end }} -->
     </div>
   </div>
 </section>
