@@ -5,7 +5,7 @@
 <section class="contact-form">
   <div class="container">
     {{ with site.Params.contact.form }}{{ if .enable -}}
-    <div class="row">
+    <!-- <div class="row">
       <form method="POST" {{ if .use_netlify }}name="{{ printf "contact_%s" $.Language.Lang }}" action="{{ "/message_sent" | relLangURL }}" netlify netlify-honeypot="nhp"{{ else }}name="contact" action="{{ .action | safeURL }}"{{ end }}>
         <div class="col-md-6 col-sm-12">
           <div class="block">
@@ -43,7 +43,7 @@
           </div>
         </div>
       </form>
-    </div>
+    </div> -->
     {{- end }}{{ end }}
     <div class="contact-box row">
       {{ with site.Params.contact -}}
