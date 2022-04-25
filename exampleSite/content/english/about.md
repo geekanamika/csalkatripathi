@@ -19,7 +19,7 @@ about:
   button1:
     enable : true
     label : "Download Resume"
-    link : "https://drive.google.com/file/d/1O__xPCJ50OJ_-_uQWYXxmxqVLH3VN7bp/view?usp=sharing"
+    link : "https://drive.google.com/file/d/1z_CvAANas83TSJYY6DV6sNqtGiZl-65P/view"
 
   button2:
     enable : true
